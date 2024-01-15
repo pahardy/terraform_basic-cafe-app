@@ -18,12 +18,6 @@ variable "ami" {
   default = "ami-0a2e7efb4257c0907"
 }
 
-variable "security-group" {
-  description = "The SecurityGroup that will allow HTTP traffic to the app"
-  type = set(string)
-  default = ["Allow-HTTP-SG"]
-}
-
 variable "azs" {
   description = "The set of AZs in the region where the app will run"
   type = list(string)
